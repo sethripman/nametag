@@ -12,7 +12,7 @@ const NameTag = () => {
   return (
     <>
       <TextSelector style={styles.TextSelector} setText={setText} />
-      <ColorSelector style={styles.ColorSelector} setBgColor={setBgColor} setTextColor={setTextColor} />
+      <ColorSelector style={styles.ColorSelector} setBgColor={setBgColor} setColor={setColor} />
       <Shape style={styles.Shape} text={text} color={color} bgColor={bgColor}/>
     </>
   );

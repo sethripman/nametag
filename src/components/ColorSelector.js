@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ColorSelector = (setColor, setBgColor) => {
+const ColorSelector = (color, bgColor, setColor, setBgColor) => {
   
   const handleChange = ({ target }) => setColor(target.value);
   const handleBgChange = ({ target }) => setBgColor(target.value);

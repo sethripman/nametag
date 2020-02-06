@@ -2,17 +2,18 @@ import React, { useState } from 'react';
 import ColorSelector from './ColorSelector';
 import TextSelector from './TextSelector';
 import Shape from './Shape';
+import styles from './App.css';
 
 const NameTag = () => {
   const [text, setText] = useState('Seth');
   const [bgColor, setBgColor] = useState('black');
-  const [textColor, setTextColor] = useState('white');
+  const [color, setColor] = useState('white');
 
   return (
     <>
-      <TextSelector setText={setText} />
-      <ColorSelector setBgColor={setBgColor} setTextColor={setTextColor} />
-      <Shape text={text} bgColor={bgColor} textColor={textColor}/>
+      <TextSelector style={styles.TextSelector} setText={setText} />
+      <ColorSelector style={styles.ColorSelector} setBgColor={setBgColor} setTextColor={setTextColor} />
+      <Shape style={styles.Shape} text={text} color={color} bgColor={bgColor}/>
     </>
   );
 };

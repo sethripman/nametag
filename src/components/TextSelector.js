@@ -1,14 +1,11 @@
 import React from 'react';
 
-const ColorSelector = (setColor, setBgColor) => {
+const ColorSelector = (setText) => {
   
-  const handleChange = ({ target }) => setColor(target.value);
+  const handleChange = ({ target }) => setText(target.value);
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="color" value={color} onChange={handleChange} />
-      <input type="color" value={bgColor} onChange={handleChange} />
-    </form>
+      <input type="text" value={text} onChange={handleChange} />
   );
 };
 
